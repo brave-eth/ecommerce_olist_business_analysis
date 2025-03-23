@@ -8,7 +8,7 @@ import pandas as pd
 import os
 
 def check_data():
-    data_path = '../data/raw'
+    data_path = './data/raw'
     for file in os.listdir(data_path):
         if file.endswith('.csv'):
             df = pd.read_csv(os.path.join(data_path, file))
